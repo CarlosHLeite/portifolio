@@ -1,0 +1,9 @@
+.navbar {
+  background: var(--bg-secundary, #252525);
+  height: 6vh;
+  display: flex;
+}
+
+.icons a {
+  margin-left: 12px;
+}
