@@ -4,9 +4,7 @@ const About = () => {
   return (
     <section className={`container ${styles.container}`}>
       <div className={styles.work}>
-        <h2 className={styles.header}>
-          <span>///</span>Work & Experience
-        </h2>
+        <h2 className={styles.header}>Experiência Profissional</h2>
 
         <div className={styles.card}>
           <div className={styles.cardHeader}>
@@ -20,9 +18,7 @@ const About = () => {
       </div>
 
       <div className={styles.education}>
-        <h2 className={styles.header}>
-          <span>///</span>Education
-        </h2>
+        <h2 className={styles.header}>Formação Acadêmica</h2>
 
         <div className={styles.educationContainer}>
           <div className={styles.card}>
@@ -37,7 +33,7 @@ const About = () => {
 
           <div className={styles.card}>
             <div className={styles.cardHeader}>
-              <p>2021 - 2023</p>
+              <p>2023 - 2027</p>
               <span>02</span>
             </div>
 
