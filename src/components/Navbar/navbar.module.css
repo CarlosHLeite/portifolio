@@ -1,9 +1,13 @@
 .navbar {
   background: var(--bg-secundary, #252525);
-  height: 6vh;
+  height: 10vh;
   display: flex;
 }
 
 .icons a {
   margin-left: 12px;
+}
+
+.icons > a > svg {
+  font-size: 3rem;
 }

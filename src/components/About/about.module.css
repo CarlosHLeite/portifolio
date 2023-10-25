@@ -1,0 +1,100 @@
+.container {
+  margin-top: 2rem;
+  min-height: 30vh;
+}
+
+.header {
+  color: #d48c2b;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.header > span {
+  margin-right: 12px;
+}
+
+.card {
+  background: #252525;
+  padding: 3rem 3rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.cardHeader p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(6deg, #ec7f11 0%, #d51a57 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardHeader span {
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 0.2rem;
+}
+
+.card em {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .work {
+    flex: 1;
+  }
+
+  .educationContainer {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+  }
+
+  .educationContainer .card {
+    min-width: 29rem;
+  }
+}
+
+@media (min-width: 1244px) {
+  .educationContainer .card {
+    min-width: 35rem;
+  }
+}
+
+@media (min-width: 1350px) {
+  .educationContainer .card {
+    min-width: 39rem;
+  }
+}
+
+@media (min-width: 1450px) {
+  .educationContainer .card {
+    min-width: 42rem;
+  }
+}

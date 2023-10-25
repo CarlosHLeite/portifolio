@@ -16,10 +16,14 @@
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: var(--bg-primary, #202020);
   color: var(--White, #fff);
-  line-height: 1.6;
+
   font-family: "Inter", sans-serif;
 }
 
@@ -32,16 +36,14 @@ a {
   background: -webkit-linear-gradient(6deg, #ec7f11 0%, #d51a57 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  font-size: 2rem;
-  font-style: normal;
+  font-size: 2.2rem;
   font-weight: 700;
-  line-height: normal;
 }
 
 .container {
   width: 90%;
   max-width: var(--max-width);
+
   margin-inline: auto;
 }
 
@@ -49,4 +51,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 430px) {
+  .logo {
+    font-size: 3rem;
+  }
 }

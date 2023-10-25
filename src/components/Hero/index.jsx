@@ -4,15 +4,11 @@ const Hero = () => {
   return (
     <section className={`container ${styles.hero}`}>
       <div className={styles.firstColumn}>
-        <h1 className="logo">Desenvolvedor Front End</h1>
-        <p>
-          Based in the UK, I’m a front-end developer passionate about building
-          accessible web apps that users love.
-        </p>
-        <button>Contact Me</button>
-      </div>
+        <p className={styles.subHeading}>Ola, eu sou um</p>
+        <h1 className={`${styles.logo}`}>Desenvolvedor Front End</h1>
 
-      <div className="secondColumn"></div>
+        <button className={styles.btn}>Contact Me</button>
+      </div>
     </section>
   );
 };
