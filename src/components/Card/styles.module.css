@@ -1,0 +1,74 @@
+.card {
+  /* min-width: 200px; */
+  background: var(--bg-secundary);
+
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.imageContainer {
+  aspect-ratio: 1;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.img {
+  position: relative;
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the container */
+}
+
+.cardBody {
+  margin-top: 2rem;
+}
+
+.cardBody h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem; /* 133.333% */
+}
+
+.tags {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.6rem; /* 155.556% */
+  margin: 1rem 0;
+}
+
+.tags p {
+  margin-right: 1.4rem;
+}
+
+.links {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links li {
+  padding-bottom: 0.6rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.links li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d48c2b;
+  bottom: 0;
+}
+
+.links a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 2.286px;
+}

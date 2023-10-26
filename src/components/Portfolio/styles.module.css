@@ -13,15 +13,6 @@
 
 .cardContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
   grid-gap: 3rem;
-}
-
-.card {
-  background: var(--bg-secundary);
-  padding: 3rem 3rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }

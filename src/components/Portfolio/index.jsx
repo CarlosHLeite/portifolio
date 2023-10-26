@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import Card from "../Card";
 
 const Portfolio = () => {
   return (
@@ -6,12 +7,10 @@ const Portfolio = () => {
       <h1 className={styles.header}>Projetos</h1>
 
       <div className={styles.cardContainer}>
-        <div className={styles.card}></div>
-        <div className={styles.card}></div>
-        <div className={styles.card}></div>
-        <div className={styles.card}></div>
-        <div className={styles.card}></div>
-        <div className={styles.card}></div>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </section>
   );
