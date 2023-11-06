@@ -1,16 +1,21 @@
-import img from "../../../public/assets/images/thumbnail-project-1-small.webp";
+import img from "../../../public/img/skilled.webp";
 import Image from "next/image";
 import styles from "./styles.module.css";
-
-const Card = () => {
+import path from "path";
+const Card = ({ portifolio }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        <Image className={styles.img} src={img} />
+        <Image
+          className={styles.img}
+          width={100}
+          height={100}
+          src={`./img/${portifolio.img}`}
+        />
       </div>
 
       <div className={styles.cardBody}>
-        <h3>Design Portfolio</h3>
+        <h3>{portifolio.name}</h3>
 
         <div className={styles.tags}>
           <p>HTML</p>
@@ -19,11 +24,15 @@ const Card = () => {
 
         <div className={styles.links}>
           <li>
-            <a href="#">VIEW PROJECT</a>
+            <a href={portifolio.demoLink} target="blank">
+              VIEW PROJECT
+            </a>
           </li>
 
           <li>
-            <a href="#">VIEW CODE</a>
+            <a href={portifolio.githubLink} target="blank">
+              VIEW CODE
+            </a>
           </li>
         </div>
       </div>
